@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  PruebaConsumoWS
 //
-//  Created by Erick Alberto Garcia Marquez on 20/08/18.
+//  Created by Erick Alberto Garcia Marquez on 28/08/18.
 //  Copyright © 2018 Erick Alberto Garcia Marquez. All rights reserved.
 //
 

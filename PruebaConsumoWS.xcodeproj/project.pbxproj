@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7CE46EC02135F611007CED1A /* ExtensionString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE46EBF2135F611007CED1A /* ExtensionString.swift */; };
 		A747F80F212BBC4C009DCBE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A747F80E212BBC4C009DCBE0 /* AppDelegate.swift */; };
 		A747F811212BBC4C009DCBE0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A747F810212BBC4C009DCBE0 /* ViewController.swift */; };
 		A747F814212BBC4C009DCBE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A747F812212BBC4C009DCBE0 /* Main.storyboard */; };
 		A747F816212BBC50009DCBE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A747F815212BBC50009DCBE0 /* Assets.xcassets */; };
 		A747F819212BBC50009DCBE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A747F817212BBC50009DCBE0 /* LaunchScreen.storyboard */; };
+		A747F821212BC07C009DCBE0 /* Datos.swift in Sources */ = {isa = PBXBuildFile; fileRef = A747F820212BC07C009DCBE0 /* Datos.swift */; };
+		A77573A221337E4D00C981CE /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77573A121337E4D00C981CE /* ItemTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7CE46EBF2135F611007CED1A /* ExtensionString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionString.swift; sourceTree = "<group>"; };
 		A747F80B212BBC4C009DCBE0 /* PruebaConsumoWS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PruebaConsumoWS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A747F80E212BBC4C009DCBE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A747F810212BBC4C009DCBE0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,8 @@
 		A747F815212BBC50009DCBE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A747F818212BBC50009DCBE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A747F81A212BBC50009DCBE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A747F820212BC07C009DCBE0 /* Datos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Datos.swift; sourceTree = "<group>"; };
+		A77573A121337E4D00C981CE /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,9 @@
 				A747F815212BBC50009DCBE0 /* Assets.xcassets */,
 				A747F817212BBC50009DCBE0 /* LaunchScreen.storyboard */,
 				A747F81A212BBC50009DCBE0 /* Info.plist */,
+				A747F820212BC07C009DCBE0 /* Datos.swift */,
+				A77573A121337E4D00C981CE /* ItemTableViewCell.swift */,
+				7CE46EBF2135F611007CED1A /* ExtensionString.swift */,
 			);
 			path = PruebaConsumoWS;
 			sourceTree = "<group>";
@@ -136,7 +145,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A747F811212BBC4C009DCBE0 /* ViewController.swift in Sources */,
+				A77573A221337E4D00C981CE /* ItemTableViewCell.swift in Sources */,
+				7CE46EC02135F611007CED1A /* ExtensionString.swift in Sources */,
 				A747F80F212BBC4C009DCBE0 /* AppDelegate.swift in Sources */,
+				A747F821212BC07C009DCBE0 /* Datos.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,8 +293,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MWSCA3D8N5;
+				DEVELOPMENT_TEAM = YNV42DSQ3Q;
 				INFOPLIST_FILE = PruebaConsumoWS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,8 +312,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MWSCA3D8N5;
+				DEVELOPMENT_TEAM = YNV42DSQ3Q;
 				INFOPLIST_FILE = PruebaConsumoWS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

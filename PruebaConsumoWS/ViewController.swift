@@ -17,7 +17,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var searchController : UISearchController!
     var task : URLSessionDataTask?
     var listado : [Attributes] = [Attributes]()
-    var listadoFiltrado : [Attributes] = [Attributes]()
     var tableViewText : UITableView = UITableView()
     
     override func viewDidLoad() {
@@ -120,7 +119,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
         
         self.listado.removeAll()
-        self.listadoFiltrado.removeAll()
         let stringUrl = "https://www.liverpool.com.mx/tienda/?s=\(textoABuscar)&d3106047a194921c01969dfdec083925=json"
         let urlEncoding = stringUrl.addingPercentEncoding(withAllowedCharacters: .urlFragmentAllowed)
         let url = URL(string: urlEncoding!)!
@@ -147,10 +145,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                         return
                     }
                     
-                    for r in records {
-                         self.listado.append(r.attributes)
-                    }
-                    self.listadoFiltrado = self.listado
+                    self.listado = records.map{$0.attributes}
                     DispatchQueue.main.async
                     {
                        self.activityIndicator.stopAnimating()
